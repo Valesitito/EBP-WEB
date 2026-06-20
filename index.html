@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0C0A09" />
+    <meta
+      name="description"
+      content="El Barbón de los Perfumes — perfumes árabes 100% originales en Mérida. Pruébalos en tienda. Aparta por WhatsApp."
+    />
+    <title>El Barbón de los Perfumes — Catálogo</title>
+
+    <!-- Fuentes self-hosted: preload del peso crítico above-the-fold -->
+    <link
+      rel="preload"
+      href="/fonts/inter-latin-500-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/cormorant-garamond-latin-500-normal.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Hero LCP: preload de la imagen above-the-fold (el navegador elige el tamaño) -->
+    <link
+      rel="preload"
+      as="image"
+      href="/hero/home-1280.webp"
+      imagesrcset="/hero/home-768.webp 768w, /hero/home-1280.webp 1280w, /hero/home-1920.webp 1920w"
+      imagesizes="100vw"
+    />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
