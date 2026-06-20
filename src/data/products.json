@@ -1,0 +1,522 @@
+[
+  {
+    "slug": "lattafa-khamrah",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Khamrah",
+    "precio": 890,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Canela", "Nuez moscada", "Bergamota"],
+      "corazon": ["Dátil", "Praliné", "Haba tonka"],
+      "fondo": ["Vainilla", "Mirra", "Ámbar"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas los gourmands cálidos con canela, dátil y vainilla que dejan estela.",
+    "tags": ["noche", "versatil", "invierno", "potente", "popular", "dulce"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "lattafa-asad",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Asad",
+    "precio": 790,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "especiado",
+    "notas": {
+      "salida": ["Pimienta negra", "Piña", "Bergamota"],
+      "corazon": ["Lavanda", "Café", "Cardamomo"],
+      "fondo": ["Ámbar", "Cuero", "Vainilla"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas algo masculino, especiado y con un toque de café para la noche.",
+    "tags": ["noche", "potente", "invierno", "masculino", "café"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "lattafa-yara",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Yara",
+    "precio": 690,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Mujer",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Orquídea", "Heliotropo"],
+      "corazon": ["Tuberosa", "Jazmín"],
+      "fondo": ["Sándalo", "Vainilla", "Almizcle"]
+    },
+    "teVaAGustarSi": "Te va a gustar si te van los aromas dulces, cremosos y femeninos que duran todo el día.",
+    "tags": ["dia", "versatil", "femenino", "dulce", "popular"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "armaf-club-de-nuit-intense-man",
+    "casa": "arabe",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Intense Man",
+    "precio": 950,
+    "formato": "botella",
+    "ml": 105,
+    "genero": "Hombre",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Piña", "Limón", "Grosella negra"],
+      "corazon": ["Abedul", "Jazmín", "Rosa"],
+      "fondo": ["Almizcle", "Vainilla", "Ámbar gris"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres el aire de Aventus a una fracción del precio.",
+    "tags": ["dia", "noche", "versatil", "fresco", "masculino", "popular"],
+    "stock": "ultimas",
+    "isNew": false
+  },
+  {
+    "slug": "armaf-eter",
+    "casa": "arabe",
+    "marca": "Armaf",
+    "nombre": "Eter",
+    "precio": 980,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "especiado",
+    "notas": {
+      "salida": ["Azafrán", "Pimienta rosa"],
+      "corazon": ["Ámbar", "Incienso"],
+      "fondo": ["Oud", "Pachulí", "Vainilla"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un oriental ambarino elegante para destacar de noche.",
+    "tags": ["noche", "potente", "invierno", "elegante", "oud"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "armaf-dunescape",
+    "casa": "arabe",
+    "marca": "Armaf",
+    "nombre": "Dunescape",
+    "precio": 820,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Manzana", "Bergamota"],
+      "corazon": ["Lavanda", "Geranio"],
+      "fondo": ["Ámbar", "Cedro", "Almizcle"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas un amaderado limpio y versátil para el diario.",
+    "tags": ["dia", "versatil", "fresco", "oficina"],
+    "stock": "porllegar",
+    "isNew": false
+  },
+  {
+    "slug": "rasasi-hawas-for-him",
+    "casa": "arabe",
+    "marca": "Rasasi",
+    "nombre": "Hawas For Him",
+    "precio": 1090,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Manzana", "Bergamota", "Canela"],
+      "corazon": ["Ámbar gris", "Acuáticas", "Avellana"],
+      "fondo": ["Almizcle", "Cedro", "Pachulí"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un fresco acuático rompe-fila ideal para clima cálido.",
+    "tags": ["dia", "versatil", "fresco", "verano", "masculino", "popular"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "maison-alhambra-jean-lowe-ombre",
+    "casa": "arabe",
+    "marca": "Maison Alhambra",
+    "nombre": "Jean Lowe Ombre",
+    "precio": 650,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Canela", "Nuez moscada"],
+      "corazon": ["Tabaco", "Cacao", "Iris"],
+      "fondo": ["Vainilla", "Haba tonka", "Madera seca"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas el Tobacco Vanille pero no su precio: dulce, especiado y abrigador.",
+    "tags": ["noche", "invierno", "potente", "dulce", "tabaco"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "rayhaan-naseem",
+    "casa": "arabe",
+    "marca": "Rayhaan",
+    "nombre": "Naseem",
+    "precio": 620,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Limón", "Menta", "Bergamota"],
+      "corazon": ["Lavanda", "Salvia"],
+      "fondo": ["Cedro", "Almizcle blanco"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas algo limpio, ligero y fresco para usar en la oficina.",
+    "tags": ["dia", "versatil", "fresco", "verano", "oficina"],
+    "stock": "agotado",
+    "isNew": false
+  },
+  {
+    "slug": "afnan-9pm",
+    "casa": "arabe",
+    "marca": "Afnan",
+    "nombre": "9PM",
+    "precio": 720,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Manzana", "Lavanda", "Bergamota"],
+      "corazon": ["Canela", "Haba tonka"],
+      "fondo": ["Vainilla", "Ámbar"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un dulce versátil, coqueto y fácil de usar todo el año.",
+    "tags": ["noche", "versatil", "dulce", "popular", "masculino"],
+    "stock": "ultimas",
+    "isNew": false
+  },
+  {
+    "slug": "bharara-king",
+    "casa": "arabe",
+    "marca": "Bharara",
+    "nombre": "King",
+    "precio": 880,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Manzana", "Bergamota", "Especias"],
+      "corazon": ["Caramelo", "Ron", "Canela"],
+      "fondo": ["Vainilla", "Ámbar", "Maderas"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas los gourmands potentes y dulces que dejan rastro toda la noche.",
+    "tags": ["noche", "invierno", "potente", "dulce"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "french-avenue-liquid-brun",
+    "casa": "nicho",
+    "marca": "French Avenue",
+    "nombre": "Liquid Brun",
+    "precio": 1180,
+    "formato": "botella",
+    "ml": 80,
+    "genero": "Unisex",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Bergamota", "Lavanda"],
+      "corazon": ["Canela", "Praliné", "Café"],
+      "fondo": ["Vainilla", "Haba tonka", "Ámbar"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas el aura de Kirke / Angels' Share en clave gourmand premium.",
+    "tags": ["noche", "invierno", "potente", "dulce", "elegante"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "french-avenue-safari-breeze",
+    "casa": "nicho",
+    "marca": "French Avenue",
+    "nombre": "Safari Breeze",
+    "precio": 1190,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Toronja", "Grosella negra", "Coco"],
+      "corazon": ["Menta", "Jazmín"],
+      "fondo": ["Vetiver", "Musgo de roble", "Ámbar"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un frutal-floral fresco y luminoso, ideal para el calor.",
+    "tags": ["dia", "versatil", "fresco", "verano"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "lattafa-fakhar-gold",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Fakhar Gold",
+    "precio": 760,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Bergamota", "Cardamomo", "Pimienta"],
+      "corazon": ["Lavanda", "Geranio", "Salvia"],
+      "fondo": ["Pachulí", "Ámbar", "Vainilla"]
+    },
+    "teVaAGustarSi": "Te va a gustar si te gusta el estilo de Sauvage Elixir: especiado, denso y elegante.",
+    "tags": ["noche", "versatil", "potente", "masculino", "elegante"],
+    "stock": "porllegar",
+    "isNew": false
+  },
+  {
+    "slug": "lattafa-bade-al-oud-amethyst",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Bade'e Al Oud Amethyst",
+    "precio": 840,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "especiado",
+    "notas": {
+      "salida": ["Azafrán", "Frutas rojas"],
+      "corazon": ["Rosa", "Oud", "Geranio"],
+      "fondo": ["Ámbar", "Maderas", "Almizcle"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas el aire de oud y rosa de los árabes clásicos, intenso y elegante.",
+    "tags": ["noche", "invierno", "potente", "oud", "elegante"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "armaf-club-de-nuit-sillage",
+    "casa": "arabe",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Sillage",
+    "precio": 1020,
+    "formato": "botella",
+    "ml": 105,
+    "genero": "Unisex",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Pimienta rosa", "Bergamota", "Toronja"],
+      "corazon": ["Jengibre", "Jazmín", "Lavanda"],
+      "fondo": ["Ámbar gris", "Cedro", "Almizcle"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas un fresco-especiado luminoso y versátil para cualquier día.",
+    "tags": ["dia", "versatil", "fresco", "elegante"],
+    "stock": "ultimas",
+    "isNew": false
+  },
+  {
+    "slug": "afnan-supremacy-not-only-intense",
+    "casa": "arabe",
+    "marca": "Afnan",
+    "nombre": "Supremacy Not Only Intense",
+    "precio": 940,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Manzana", "Canela", "Pimienta"],
+      "corazon": ["Cuero", "Praliné", "Café"],
+      "fondo": ["Vainilla", "Ámbar", "Maderas"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres algo potente, dulce y masculino para impresionar de noche.",
+    "tags": ["noche", "invierno", "potente", "masculino", "dulce"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "lattafa-yara-moi",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Yara Moi",
+    "precio": 720,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Mujer",
+    "familia": "floral",
+    "notas": {
+      "salida": ["Frutas rojas", "Bergamota"],
+      "corazon": ["Flor de azahar", "Jazmín"],
+      "fondo": ["Vainilla", "Almizcle", "Maderas"]
+    },
+    "teVaAGustarSi": "Te va a gustar si te van los florales afrutados dulces y coquetos para el día.",
+    "tags": ["dia", "versatil", "femenino", "floral", "dulce"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "maison-alhambra-kismet-mens",
+    "casa": "arabe",
+    "marca": "Maison Alhambra",
+    "nombre": "Kismet Men's",
+    "precio": 640,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Hombre",
+    "familia": "especiado",
+    "notas": {
+      "salida": ["Pimienta", "Bergamota", "Cardamomo"],
+      "corazon": ["Lavanda", "Incienso"],
+      "fondo": ["Ámbar", "Pachulí", "Maderas"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas un especiado elegante estilo The Most Wanted a buen precio.",
+    "tags": ["noche", "versatil", "potente", "masculino", "elegante"],
+    "stock": "agotado",
+    "isNew": false
+  },
+  {
+    "slug": "rasasi-hawas-for-her",
+    "casa": "arabe",
+    "marca": "Rasasi",
+    "nombre": "Hawas For Her",
+    "precio": 1090,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Mujer",
+    "familia": "floral",
+    "notas": {
+      "salida": ["Frambuesa", "Bergamota", "Pera"],
+      "corazon": ["Jazmín", "Flor de naranjo", "Acuáticas"],
+      "fondo": ["Almizcle", "Maderas", "Pachulí"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un floral fresco, jugoso y luminoso para clima cálido.",
+    "tags": ["dia", "versatil", "femenino", "floral", "fresco", "verano"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "lattafa-mayar-cherry",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Mayar Cherry",
+    "precio": 680,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Mujer",
+    "familia": "floral",
+    "notas": {
+      "salida": ["Cereza", "Almendra"],
+      "corazon": ["Rosa", "Jazmín"],
+      "fondo": ["Vainilla", "Almizcle", "Sándalo"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas el efecto cereza-almendra tipo Lost Cherry en clave floral.",
+    "tags": ["noche", "femenino", "floral", "dulce", "popular"],
+    "stock": "porllegar",
+    "isNew": true
+  },
+  {
+    "slug": "lattafa-khamrah-waha",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Khamrah Waha",
+    "precio": 920,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Bergamota", "Yuzu", "Jengibre", "Enebro"],
+      "corazon": ["Pepino", "Sal marina", "Salvia", "Iris"],
+      "fondo": ["Vainilla", "Haba tonka", "Almizcle", "Akigalawood"]
+    },
+    "teVaAGustarSi": "Te va a gustar si amas Khamrah pero lo quieres en clave fresca y acuática para el día.",
+    "tags": ["dia", "versatil", "fresco", "verano"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "arabiyat-marwa",
+    "casa": "arabe",
+    "marca": "Arabiyat Prestige",
+    "nombre": "Marwa",
+    "precio": 790,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Bergamota", "Limón", "Naranja"],
+      "corazon": ["Neroli", "Jengibre", "Canela"],
+      "fondo": ["Té negro", "Incienso", "Ambroxan", "Madera de guayaco"]
+    },
+    "teVaAGustarSi": "Te va a gustar si buscas un cítrico-amaderado elegante con té negro y maderas, al aire de LV Imagination.",
+    "tags": ["dia", "versatil", "elegante", "citrico"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "decant-khamrah-5ml",
+    "casa": "arabe",
+    "marca": "Lattafa",
+    "nombre": "Khamrah · Decant",
+    "precio": 180,
+    "formato": "decant",
+    "ml": 5,
+    "genero": "Unisex",
+    "familia": "gourmand",
+    "notas": {
+      "salida": ["Canela", "Nuez moscada"],
+      "corazon": ["Dátil", "Praliné"],
+      "fondo": ["Vainilla", "Mirra"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres probar Khamrah unos días antes de llevarte la botella.",
+    "tags": ["noche", "dulce", "prueba", "versatil"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "decant-hawas-10ml",
+    "casa": "arabe",
+    "marca": "Rasasi",
+    "nombre": "Hawas For Him · Decant",
+    "precio": 320,
+    "formato": "decant",
+    "ml": 10,
+    "genero": "Hombre",
+    "familia": "fresco",
+    "notas": {
+      "salida": ["Manzana", "Bergamota"],
+      "corazon": ["Ámbar gris", "Acuáticas"],
+      "fondo": ["Almizcle", "Cedro"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres un fresco para viaje sin cargar el frasco completo.",
+    "tags": ["dia", "fresco", "verano", "prueba", "versatil"],
+    "stock": "disponible",
+    "isNew": false
+  },
+  {
+    "slug": "decant-club-de-nuit-intense-10ml",
+    "casa": "arabe",
+    "marca": "Armaf",
+    "nombre": "Club de Nuit Intense · Decant",
+    "precio": 290,
+    "formato": "decant",
+    "ml": 10,
+    "genero": "Hombre",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Piña", "Limón"],
+      "corazon": ["Abedul", "Jazmín"],
+      "fondo": ["Almizcle", "Vainilla"]
+    },
+    "teVaAGustarSi": "Te va a gustar si quieres el clásico tipo Aventus para llevar a donde sea.",
+    "tags": ["dia", "noche", "versatil", "fresco", "prueba"],
+    "stock": "ultimas",
+    "isNew": false
+  }
+]
