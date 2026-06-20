@@ -1,7 +1,9 @@
 import ProductImage from './ProductImage'
-import Pyramid from './Pyramid'
+import NoteCircles from './NoteCircles'
 import StockTag from './StockTag'
 import WhatsAppButton from './WhatsAppButton'
+import { isApartable } from '@/lib/whatsapp'
+import { formatPrecio } from '@/lib/format'
 
 // Card de producto con dos variantes: `dark` (Colección Signature, sobre
 // oscuro) y `light` (catálogo, sobre arena). `eager` desactiva el lazy en las
@@ -30,6 +32,7 @@ const VARIANTS = {
 
 export default function ProductCard({ producto, variant = 'light', eager = false, showDesc = true }) {
   const v = VARIANTS[variant] ?? VARIANTS.light
+  const apartable = isApartable(producto.stock)
 
   return (
     <article
@@ -41,13 +44,11 @@ export default function ProductCard({ producto, variant = 'light', eager = false
           alt={`${producto.marca} ${producto.nombre}`}
           eager={eager}
           tone={v.tone}
+          dimmed={!apartable}
           className={`aspect-[4/5] bg-gradient-to-b ${v.photo}`}
         />
-        <StockTag stock={producto.stock} tone={v.tone} className="absolute left-3 top-3" />
-        {producto.isNew && (
-          <span className="absolute right-3 top-3 rounded bg-brass px-2 py-1 text-[9px] font-semibold uppercase tracking-[0.16em] text-espresso">
-            Nuevo
-          </span>
+        {producto.stock === 'ultimas' && (
+          <StockTag stock={producto.stock} className="absolute left-3 top-3" />
         )}
       </div>
 
@@ -56,9 +57,9 @@ export default function ProductCard({ producto, variant = 'light', eager = false
           <div className={`text-[10px] uppercase tracking-[0.22em] ${v.brand}`}>{producto.marca}</div>
           <h3 className={`font-serif text-2xl leading-none ${v.name}`}>{producto.nombre}</h3>
         </div>
-        <div className={`text-base font-semibold ${v.price}`}>${producto.precio} MXN</div>
-        {showDesc && <p className={`text-[12.5px] leading-snug ${v.desc}`}>{producto.teVaAGustarSi}</p>}
-        <Pyramid producto={producto} tone={v.tone} max={2} />
+        <div className={`text-base font-semibold ${v.price}`}>${formatPrecio(producto.precio)} MXN</div>
+        <NoteCircles producto={producto} tone={v.tone} />
+        {showDesc && <p className={`text-[12.5px] font-medium leading-snug ${v.desc}`}>{producto.teVaAGustarSi}</p>}
         <WhatsAppButton producto={producto} className="mt-auto" />
       </div>
     </article>

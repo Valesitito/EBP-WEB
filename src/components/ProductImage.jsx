@@ -11,12 +11,14 @@ const MONOGRAM_TONE = {
   light: 'from-sand-2 to-sand text-amaderado/40',
 }
 
-export default function ProductImage({ slug, alt, eager = false, tone = 'dark', className = '' }) {
+export default function ProductImage({ slug, alt, eager = false, tone = 'dark', dimmed = false, className = '' }) {
   const [failed, setFailed] = useState(false)
   const showMonogram = !hasPhoto(slug) || failed
 
   return (
-    <div className={`relative w-full overflow-hidden ${className}`}>
+    <div
+      className={`relative w-full overflow-hidden ${dimmed ? 'opacity-60 saturate-[0.25]' : ''} ${className}`}
+    >
       {showMonogram ? (
         <div
           className={`grid h-full w-full place-items-center bg-gradient-to-b ${MONOGRAM_TONE[tone] ?? MONOGRAM_TONE.dark}`}
