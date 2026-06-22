@@ -1,5 +1,5 @@
 import Header from './components/Header'
-import Hero from './components/Hero'
+import HeroSplit from './components/HeroSplit'
 import Signature from './components/Signature'
 import Catalog from './components/Catalog'
 import FamiliesStrip from './components/FamiliesStrip'
@@ -10,7 +10,7 @@ export default function App() {
     <>
       <Header />
       <main>
-        <Hero />
+        <HeroSplit />
         <Signature />
         <Catalog />
         <FamiliesStrip />

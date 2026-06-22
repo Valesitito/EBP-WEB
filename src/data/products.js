@@ -39,6 +39,7 @@ const CON_FOTO = new Set([
   'french-avenue-safari-breeze',
   'lattafa-khamrah-waha',
   'arabiyat-marwa',
+  'sospiro-vibrato',
   // ← al agregar una foto: pon el .png/.jpg en assets-src/products con el slug
   //   como nombre, corre `npm run optimize:images` y agrega el slug aquí.
 ])
@@ -55,6 +56,16 @@ export function getProductBySlug(slug) {
   return data.find((p) => p.slug === slug) ?? null
 }
 
+// Notas clave: las 3 notas más características del perfume (para los círculos
+// de la card). Si el producto trae `notasClave` curadas, se usan; si no, se
+// derivan tomando una nota representativa de cada nivel de la pirámide.
+export function getNotasClave(producto) {
+  if (producto.notasClave?.length) return producto.notasClave.slice(0, 3)
+  const { salida = [], corazon = [], fondo = [] } = producto.notas ?? {}
+  const pick = [salida[0], corazon[0], fondo[0]].filter(Boolean)
+  return [...new Set(pick)].slice(0, 3)
+}
+
 // Familias olfativas presentes en el catálogo, en orden de aparición.
 export function getFamilies() {
   const out = []
@@ -64,9 +75,9 @@ export function getFamilies() {
 
 // Destacados de la Colección Signature — curados por slug (una sola fuente).
 const FEATURED = [
-  'lattafa-khamrah',
   'armaf-club-de-nuit-intense-man',
-  'lattafa-yara',
+  'afnan-9pm-night-out',
+  'armaf-dunescape',
 ]
 export function getFeatured() {
   return FEATURED.map(getProductBySlug).filter(Boolean)
@@ -94,8 +105,10 @@ export function sortProducts(list, sort = 'destacados') {
       return arr.sort((a, b) => Number(b.isNew) - Number(a.isNew))
     case 'destacados':
     default:
+      // Productos con foto real primero (lucen mejor), luego por stock y marca.
       return arr.sort(
         (a, b) =>
+          Number(hasPhoto(b.slug)) - Number(hasPhoto(a.slug)) ||
           PESO_STOCK[a.stock] - PESO_STOCK[b.stock] ||
           a.marca.localeCompare(b.marca, 'es') ||
           a.nombre.localeCompare(b.nombre, 'es'),

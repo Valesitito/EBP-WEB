@@ -7,7 +7,7 @@ export function isApartable(stock) {
 
 // Texto del CTA según el stock.
 export function waCtaLabel(stock) {
-  return isApartable(stock) ? 'Apartar por WhatsApp' : 'Avísame cuando llegue'
+  return isApartable(stock) ? 'Apartar por WhatsApp' : 'Avísame cuando esté disponible'
 }
 
 // Construye el link wa.me con el mensaje pre-llenado correcto según el stock.

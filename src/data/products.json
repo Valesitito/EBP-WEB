@@ -74,6 +74,7 @@
       "corazon": ["Abedul", "Jazmín", "Rosa"],
       "fondo": ["Almizcle", "Vainilla", "Ámbar gris"]
     },
+    "notasClave": ["Piña", "Abedul", "Ámbar gris"],
     "teVaAGustarSi": "Te va a gustar si quieres el aire de Aventus a una fracción del precio.",
     "tags": ["dia", "noche", "versatil", "fresco", "masculino", "popular"],
     "stock": "ultimas",
@@ -108,15 +109,16 @@
     "formato": "botella",
     "ml": 100,
     "genero": "Unisex",
-    "familia": "amaderado",
+    "familia": "fresco",
     "notas": {
-      "salida": ["Manzana", "Bergamota"],
-      "corazon": ["Lavanda", "Geranio"],
-      "fondo": ["Ámbar", "Cedro", "Almizcle"]
+      "salida": ["Naranja sanguina", "Bergamota", "Mandarina", "Jengibre"],
+      "corazon": ["Manzana", "Geranio", "Cashmeran"],
+      "fondo": ["Almizcle", "Ámbar", "Sándalo"]
     },
-    "teVaAGustarSi": "Te va a gustar si buscas un amaderado limpio y versátil para el diario.",
-    "tags": ["dia", "versatil", "fresco", "oficina"],
-    "stock": "porllegar",
+    "notasClave": ["Naranja sanguina", "Jengibre", "Sándalo"],
+    "teVaAGustarSi": "Te va a gustar si buscas un cítrico fresco y luminoso para el diario, al aire de Y EDP.",
+    "tags": ["dia", "versatil", "fresco", "oficina", "citrico"],
+    "stock": "disponible",
     "isNew": false
   },
   {
@@ -200,6 +202,27 @@
     "isNew": false
   },
   {
+    "slug": "afnan-9pm-night-out",
+    "casa": "arabe",
+    "marca": "Afnan",
+    "nombre": "9PM Night Out",
+    "precio": 950,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "especiado",
+    "notas": {
+      "salida": ["Pitahaya", "Manzana", "Coñac", "Lavanda", "Bergamota"],
+      "corazon": ["Toffee", "Gamuza", "Cardamomo", "Cedro"],
+      "fondo": ["Haba tonka", "Akigalawood", "Ambroxan", "Pachulí"]
+    },
+    "notasClave": ["Pitahaya", "Gamuza", "Toffee"],
+    "teVaAGustarSi": "Te va a gustar si quieres un oriental de noche: arranca afrutado y vira a gamuza, toffee y maderas.",
+    "tags": ["noche", "potente", "invierno", "dulce", "elegante"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
     "slug": "bharara-king",
     "casa": "arabe",
     "marca": "Bharara",
@@ -254,6 +277,7 @@
       "corazon": ["Menta", "Jazmín"],
       "fondo": ["Vetiver", "Musgo de roble", "Ámbar"]
     },
+    "notasClave": ["Toronja", "Grosella negra", "Coco"],
     "teVaAGustarSi": "Te va a gustar si quieres un frutal-floral fresco y luminoso, ideal para el calor.",
     "tags": ["dia", "versatil", "fresco", "verano"],
     "stock": "disponible",
@@ -434,6 +458,7 @@
       "corazon": ["Pepino", "Sal marina", "Salvia", "Iris"],
       "fondo": ["Vainilla", "Haba tonka", "Almizcle", "Akigalawood"]
     },
+    "notasClave": ["Bergamota", "Pepino", "Vainilla"],
     "teVaAGustarSi": "Te va a gustar si amas Khamrah pero lo quieres en clave fresca y acuática para el día.",
     "tags": ["dia", "versatil", "fresco", "verano"],
     "stock": "disponible",
@@ -454,8 +479,30 @@
       "corazon": ["Neroli", "Jengibre", "Canela"],
       "fondo": ["Té negro", "Incienso", "Ambroxan", "Madera de guayaco"]
     },
+    "notasClave": ["Bergamota", "Té negro", "Jengibre"],
     "teVaAGustarSi": "Te va a gustar si buscas un cítrico-amaderado elegante con té negro y maderas, al aire de LV Imagination.",
     "tags": ["dia", "versatil", "elegante", "citrico"],
+    "stock": "disponible",
+    "isNew": true
+  },
+  {
+    "slug": "sospiro-vibrato",
+    "casa": "nicho",
+    "marca": "Sospiro",
+    "nombre": "Vibrato",
+    "precio": 7499,
+    "formato": "botella",
+    "ml": 100,
+    "genero": "Unisex",
+    "familia": "amaderado",
+    "notas": {
+      "salida": ["Toronja", "Bergamota", "Jazmín", "Magnolia"],
+      "corazon": ["Jengibre", "Hierbas aromáticas"],
+      "fondo": ["Cedro", "Ámbar", "Pachulí", "Iris", "Almizcle"]
+    },
+    "notasClave": ["Toronja", "Jengibre", "Iris"],
+    "teVaAGustarSi": "Te va a gustar si buscas un nicho italiano: cítrico chispeante con un fondo amaderado y aterciopelado.",
+    "tags": ["dia", "versatil", "elegante", "citrico", "nicho"],
     "stock": "disponible",
     "isNew": true
   },
