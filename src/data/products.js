@@ -75,9 +75,9 @@ export function getFamilies() {
 
 // Destacados de la Colección Signature — curados por slug (una sola fuente).
 const FEATURED = [
-  'lattafa-khamrah',
   'armaf-club-de-nuit-intense-man',
-  'lattafa-yara',
+  'afnan-9pm-night-out',
+  'armaf-dunescape',
 ]
 export function getFeatured() {
   return FEATURED.map(getProductBySlug).filter(Boolean)
