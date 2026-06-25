@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { Menu, X } from 'lucide-react'
-import { WaIcon } from './WhatsAppButton'
-import { config } from '@/config'
 
 const NAV = [
   { label: 'Árabe', href: '#catalogo' },
@@ -12,11 +10,10 @@ const NAV = [
 
 export default function Header() {
   const [open, setOpen] = useState(false)
-  const wa = `https://wa.me/${config.whatsappNumber}`
 
   return (
     <header className="sticky top-0 z-50 border-b border-brass/15 bg-espresso/85 backdrop-blur-md">
-      <div className="mx-auto flex h-[68px] max-w-[1180px] items-center justify-between px-6">
+      <div className="relative mx-auto flex h-[68px] max-w-[1180px] items-center justify-between px-6">
         <a href="#top" className="flex items-center gap-3">
           <span className="grid h-9 w-9 place-items-center rounded-full border-[1.5px] border-brass font-serif text-xl text-brass-soft">
             B
@@ -29,7 +26,9 @@ export default function Header() {
           </span>
         </a>
 
-        <nav className="hidden items-center gap-7 text-[13px] text-cream-soft md:flex">
+        {/* Categorías centradas en la barra: posición absoluta para centrarlas
+            respecto al header completo, sin que el logo las empuje. */}
+        <nav className="absolute inset-y-0 left-1/2 hidden -translate-x-1/2 items-center gap-7 text-[13px] text-cream-soft md:flex">
           {NAV.map((n) => (
             <a key={n.label} href={n.href} className="transition-colors hover:text-brass-soft">
               {n.label}
@@ -37,24 +36,14 @@ export default function Header() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <a
-            href={wa}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden items-center gap-2 rounded-full bg-wa px-4 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-wa-hi sm:flex"
-          >
-            <WaIcon /> Apartar por WhatsApp
-          </a>
-          <button
-            onClick={() => setOpen((o) => !o)}
-            className="text-cream md:hidden"
-            aria-label="Abrir menú"
-            aria-expanded={open}
-          >
-            {open ? <X size={22} /> : <Menu size={22} />}
-          </button>
-        </div>
+        <button
+          onClick={() => setOpen((o) => !o)}
+          className="text-cream md:hidden"
+          aria-label="Abrir menú"
+          aria-expanded={open}
+        >
+          {open ? <X size={22} /> : <Menu size={22} />}
+        </button>
       </div>
 
       {open && (
@@ -69,14 +58,6 @@ export default function Header() {
               {n.label}
             </a>
           ))}
-          <a
-            href={wa}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-2 flex items-center justify-center gap-2 rounded-full bg-wa px-4 py-2.5 text-sm font-semibold text-white"
-          >
-            <WaIcon /> Apartar por WhatsApp
-          </a>
         </nav>
       )}
     </header>

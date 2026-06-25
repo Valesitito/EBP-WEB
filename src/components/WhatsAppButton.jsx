@@ -13,15 +13,17 @@ export function WaIcon({ className = 'h-4 w-4' }) {
 // cambian según el stock (apartar vs avísame cuando llegue) — toda esa lógica
 // vive en lib/whatsapp.js.
 export default function WhatsAppButton({ producto, className = '' }) {
+  const label = waCtaLabel(producto.stock)
   return (
     <a
       href={buildWaLink(producto)}
       target="_blank"
       rel="noopener noreferrer"
-      className={`flex items-center justify-center gap-2 rounded-md bg-wa px-4 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-wa-hi ${className}`}
+      aria-label={label}
+      className={`flex items-center justify-center gap-2 rounded-md bg-wa px-2 py-2.5 text-[13px] font-semibold text-white transition-colors hover:bg-wa-hi md:px-4 ${className}`}
     >
       <WaIcon />
-      {waCtaLabel(producto.stock)}
+      <span className="hidden md:inline">{label}</span>
     </a>
   )
 }

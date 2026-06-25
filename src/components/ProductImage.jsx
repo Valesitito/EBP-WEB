@@ -30,7 +30,7 @@ export default function ProductImage({ slug, alt, eager = false, tone = 'dark', 
         <img
           src={`/products/${slug}-800.webp`}
           srcSet={`/products/${slug}-400.webp 400w, /products/${slug}-800.webp 800w`}
-          sizes="(max-width: 560px) 88vw, (max-width: 920px) 45vw, 22vw"
+          sizes="(max-width: 1024px) 33vw, 22vw"
           alt={alt}
           loading={eager ? 'eager' : 'lazy'}
           decoding="async"
