@@ -5,9 +5,9 @@ import WhatsAppButton from './WhatsAppButton'
 import { isApartable } from '@/lib/whatsapp'
 import { formatPrecio } from '@/lib/format'
 
-// Card de producto con dos variantes: `dark` (Colección Signature, sobre
-// oscuro) y `light` (catálogo, sobre arena). `eager` desactiva el lazy en las
-// primeras cards visibles. Mismo contenido, distinta piel.
+// Card de producto con dos variantes: `dark` (sobre fondo oscuro) y `light`
+// (catálogo, sobre arena). `eager` desactiva el lazy en las primeras cards
+// visibles. Mismo contenido, distinta piel.
 
 const VARIANTS = {
   dark: {
@@ -48,18 +48,30 @@ export default function ProductCard({ producto, variant = 'light', eager = false
           className={`aspect-[4/5] bg-gradient-to-b ${v.photo}`}
         />
         {producto.stock === 'ultimas' && (
-          <StockTag stock={producto.stock} className="absolute left-3 top-3" />
+          <StockTag stock={producto.stock} className="absolute left-2 top-2 md:left-3 md:top-3" />
         )}
       </div>
 
-      <div className="flex flex-1 flex-col gap-3 p-4">
+      <div className="flex flex-1 flex-col gap-1.5 p-2.5 md:gap-3 md:p-4">
         <div>
-          <div className={`text-[10px] uppercase tracking-[0.22em] ${v.brand}`}>{producto.marca}</div>
-          <h3 className={`font-serif text-2xl leading-none ${v.name}`}>{producto.nombre}</h3>
+          <div className={`hidden text-[10px] uppercase tracking-[0.22em] md:block ${v.brand}`}>
+            {producto.marca}
+          </div>
+          <h3 className={`line-clamp-2 min-h-[2.5em] font-serif text-base leading-tight md:min-h-0 md:text-2xl md:leading-none ${v.name}`}>
+            {producto.nombre}
+          </h3>
         </div>
-        <div className={`text-base font-semibold ${v.price}`}>${formatPrecio(producto.precio)} MXN</div>
-        <NoteCircles producto={producto} tone={v.tone} />
-        {showDesc && <p className={`text-[12.5px] font-medium leading-snug ${v.desc}`}>{producto.teVaAGustarSi}</p>}
+        <div className={`whitespace-nowrap text-sm font-semibold md:text-base ${v.price}`}>
+          ${formatPrecio(producto.precio)} MXN
+        </div>
+        <div className="hidden md:block">
+          <NoteCircles producto={producto} tone={v.tone} />
+        </div>
+        {showDesc && (
+          <p className={`hidden text-[12.5px] font-medium leading-snug md:block ${v.desc}`}>
+            {producto.teVaAGustarSi}
+          </p>
+        )}
         <WhatsAppButton producto={producto} className="mt-auto" />
       </div>
     </article>

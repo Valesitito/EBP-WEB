@@ -73,16 +73,6 @@ export function getFamilies() {
   return out
 }
 
-// Destacados de la Colección Signature — curados por slug (una sola fuente).
-const FEATURED = [
-  'armaf-club-de-nuit-intense-man',
-  'afnan-9pm-night-out',
-  'armaf-dunescape',
-]
-export function getFeatured() {
-  return FEATURED.map(getProductBySlug).filter(Boolean)
-}
-
 // --- Filtro + orden del catálogo -------------------------------------------
 // Filtros anidados: primero `casa`, dentro `stock` y criterio de `sort`.
 export function filterProducts({ casa = 'todas', stock = 'todos', sort = 'destacados' } = {}) {
